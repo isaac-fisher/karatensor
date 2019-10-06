@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//isaac-fisher.github.io/karatensor/static/css/main.34de6062.chunk.css",
+    "main.js": "//isaac-fisher.github.io/karatensor/static/js/main.71cbfc3f.chunk.js",
+    "main.js.map": "//isaac-fisher.github.io/karatensor/static/js/main.71cbfc3f.chunk.js.map",
+    "runtime~main.js": "//isaac-fisher.github.io/karatensor/static/js/runtime~main.2cb26354.js",
+    "runtime~main.js.map": "//isaac-fisher.github.io/karatensor/static/js/runtime~main.2cb26354.js.map",
+    "static/js/2.fdf53ff0.chunk.js": "//isaac-fisher.github.io/karatensor/static/js/2.fdf53ff0.chunk.js",
+    "static/js/2.fdf53ff0.chunk.js.map": "//isaac-fisher.github.io/karatensor/static/js/2.fdf53ff0.chunk.js.map",
+    "index.html": "//isaac-fisher.github.io/karatensor/index.html",
+    "precache-manifest.4f46d2e33a32a95ecb5b308bc78d6198.js": "//isaac-fisher.github.io/karatensor/precache-manifest.4f46d2e33a32a95ecb5b308bc78d6198.js",
+    "service-worker.js": "//isaac-fisher.github.io/karatensor/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "//isaac-fisher.github.io/karatensor/static/css/main.34de6062.chunk.css.map"
+  }
+}
