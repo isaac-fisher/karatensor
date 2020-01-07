@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useInterval } from '../../utils/setInterval';
-
-const classes = ['Left', 'No', 'Right'];
+import { moves } from '../../utils/constants';
 
 function Vid({setMove}) {
+  const classes = Object.values(moves)
   const videoEl = useRef(null);
   const [training, setTraining] = useState(null);
   const [testing, setTesting] = useState(false);

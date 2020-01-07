@@ -1,48 +1,76 @@
 import React, { useState } from 'react';
 import { useInterval } from '../../utils/setInterval';
 import styled from "styled-components";
+import { moves } from '../../utils/constants';
+import Player from './player';
 
-const screenWidth = 640;
-const screenHeight = 480;
 const playerWidth = 40;
-const playerHeight = 40;
-const movment = 5;
+const playerHeight = 100;
 
-const Scene = styled('div')`
+const SceneWrapper = styled('div')`
   position: absolute;
-  bottom: 0;
-  width: ${screenWidth}px;
-  height: ${screenHeight}px;
-  border: black solid 1px;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 `;
 
-const Player = styled('div')`
-  background-color: rebeccapurple;
+const SceneTop = styled('div')`
+  flex-grow: 1;
+  background-color: #007cf8;
+`
+
+const SceneCenter = styled('div')`
+  height: 40%;
+  width: 100%;
+  display: flex;
+  background-color: #111;
+`
+
+const SceneBottom = styled('div')`
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(45deg, #8989c5 25%, transparent 25%), linear-gradient(-45deg, #8989c5 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #8989c5 75%), linear-gradient(-45deg, #54fcfc 75%, #8989c5 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+`;
+
+const PlayerWrapper = styled('div')`
+  position: absolute;
+  bottom: 45px;
   width: ${playerWidth}px;
   height: ${playerHeight}px;
-  border-radius: 12px;
-  align-self: flex-end;
-  margin-left: ${({location}) => location}px;
+  left: ${({location}) => location}px;
+  background-color: #aaa;
 `;
 
 function World({ move }) {
+  
+  const screenWidth = window.screen.width;
+
+  const movment = 5;
+
   const [location, setLocation] = useState(0);
 
   useInterval(async () => {
-    move = move.toLowerCase();
-    console.log(move);
-    if (move === "left") {
+    // move = move.toLowerCase();
+    // console.log(move);
+    if (move === moves.LEFT) {
       setLocation(location - movment < 0 ? 0 : location - movment);
-    } else if (move === "right") {
+    } else if (move === moves.RIGHT) {
       setLocation(location + movment > screenWidth - playerWidth ? screenWidth - playerWidth : location + movment)
     }
   }, 80);
 
   return (
-    <Scene>
-      <Player location={location}/>
-    </Scene>
+    <SceneWrapper>
+      <SceneTop/>
+      <SceneCenter/>
+      <PlayerWrapper location={location}>
+        <Player/>
+      </PlayerWrapper>
+      <SceneBottom/>
+    </SceneWrapper>
   );
 }
 
