@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7097f23a19384addde9485384f9379eb",
+    "revision": "eba347188cc6ac3f881bf481f578ef26",
     "url": "//isaac-fisher.github.io/karatensor/index.html"
   },
   {
-    "revision": "e2833c2cf227601d06fe",
+    "revision": "aef3d985f399fab233f2",
     "url": "//isaac-fisher.github.io/karatensor/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "3d48269e8c416550113f",
-    "url": "//isaac-fisher.github.io/karatensor/static/js/2.18e00a47.chunk.js"
+    "revision": "2700320847d96e7fb584",
+    "url": "//isaac-fisher.github.io/karatensor/static/js/2.7ba104ce.chunk.js"
   },
   {
     "revision": "b5c8281ca89c1ddb89c15ead0e00f32f",
-    "url": "//isaac-fisher.github.io/karatensor/static/js/2.18e00a47.chunk.js.LICENSE"
+    "url": "//isaac-fisher.github.io/karatensor/static/js/2.7ba104ce.chunk.js.LICENSE"
   },
   {
-    "revision": "e2833c2cf227601d06fe",
-    "url": "//isaac-fisher.github.io/karatensor/static/js/main.6701a925.chunk.js"
+    "revision": "aef3d985f399fab233f2",
+    "url": "//isaac-fisher.github.io/karatensor/static/js/main.76378b8d.chunk.js"
   },
   {
     "revision": "e313e82a8b753ec84a59",
