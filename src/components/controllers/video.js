@@ -67,7 +67,7 @@ function Vid({setMove}) {
       <div style={{ position: 'absolute', right: 0, top:0 }}><video ref={videoEl} autoPlay width="100" height="100"/></div>
       <div>
         {classes.map((name, index) => (
-          <Button key={index} onMouseDown={() => setTraining(index)} onMouseLeave={()=> setTraining(null)} onMouseUp={()=> setTraining(null)}>{name} gesture</Button>
+          <button key={index} onPointerDown={() => setTraining(index)} onPointerOut={()=> setTraining(null)} onPointerUp={()=> setTraining(null)}>{name} gesture</button>
         ))}
         <br/>
         <button onClick={toggleTesting} style={{color: testing ? 'green' : 'red'}}>Test</button>
