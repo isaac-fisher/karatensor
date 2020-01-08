@@ -41,11 +41,13 @@ const PlayerWrapper = styled('div')`
   left: ${({left}) => left}px;
 `;
 
-function WorldDisplayer({ playerLocation, move }) {
+  function WorldDisplayer({ playerLocation, move, children }) {
 
   return (
     <SceneWrapper>
-      <SceneTop/>
+      <SceneTop>
+        { children }
+      </SceneTop>
       <SceneCenter/>
       <PlayerWrapper left={playerLocation}>
         <Player move={move}/>

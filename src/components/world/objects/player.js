@@ -33,7 +33,7 @@ function Player({move}) {
   lastMove = move;
     
   return (
-    <PlayerLook step={step} sprite={sprite}></PlayerLook>
+    <PlayerLook step={step} sprite={sprite}>{move}</PlayerLook>
   );
 }
 

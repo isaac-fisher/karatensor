@@ -7,10 +7,9 @@ function Logic() {
   const [move, setMove] = useState("");
   const Controller = false ? Keys : Vid
   return (
-    <>
-      <Controller setMove={setMove}/>
-      <World move={move}/>
-    </>
+      <World move={move}>
+        <Controller setMove={setMove}/>
+      </World>
   );
 }
 

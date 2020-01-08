@@ -7,7 +7,7 @@ import WorldDisplayer from './displayer';
 
 const playerWidth = 64;
 
-function World({ move }) {
+function World({ move, children }) {
   
   const screenWidth = window.innerWidth;
 
@@ -27,7 +27,12 @@ function World({ move }) {
   }, 80);
     
   return (
-    <WorldDisplayer playerLocation={location} move={move}/>
+    <WorldDisplayer
+      playerLocation={location}
+      move={move}
+    >
+      { children }
+    </WorldDisplayer>
   );
 }
 
