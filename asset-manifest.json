@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "//isaac-fisher.github.io/karatensor/static/css/main.34de6062.chunk.css",
-    "main.js": "//isaac-fisher.github.io/karatensor/static/js/main.bf4bf7df.chunk.js",
-    "main.js.map": "//isaac-fisher.github.io/karatensor/static/js/main.bf4bf7df.chunk.js.map",
+    "main.js": "//isaac-fisher.github.io/karatensor/static/js/main.dd63893a.chunk.js",
+    "main.js.map": "//isaac-fisher.github.io/karatensor/static/js/main.dd63893a.chunk.js.map",
     "runtime-main.js": "//isaac-fisher.github.io/karatensor/static/js/runtime-main.5926f402.js",
     "runtime-main.js.map": "//isaac-fisher.github.io/karatensor/static/js/runtime-main.5926f402.js.map",
     "static/js/2.7ba104ce.chunk.js": "//isaac-fisher.github.io/karatensor/static/js/2.7ba104ce.chunk.js",
     "static/js/2.7ba104ce.chunk.js.map": "//isaac-fisher.github.io/karatensor/static/js/2.7ba104ce.chunk.js.map",
     "index.html": "//isaac-fisher.github.io/karatensor/index.html",
-    "precache-manifest.83aa47aae1c21a1f10e26256e03703d4.js": "//isaac-fisher.github.io/karatensor/precache-manifest.83aa47aae1c21a1f10e26256e03703d4.js",
+    "precache-manifest.c3363e3703c42b8b5cfff011648593a2.js": "//isaac-fisher.github.io/karatensor/precache-manifest.c3363e3703c42b8b5cfff011648593a2.js",
     "service-worker.js": "//isaac-fisher.github.io/karatensor/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "//isaac-fisher.github.io/karatensor/static/css/main.34de6062.chunk.css.map",
     "static/js/2.7ba104ce.chunk.js.LICENSE": "//isaac-fisher.github.io/karatensor/static/js/2.7ba104ce.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5926f402.js",
     "static/js/2.7ba104ce.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.bf4bf7df.chunk.js"
+    "static/js/main.dd63893a.chunk.js"
   ]
 }
