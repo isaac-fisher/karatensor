@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eba347188cc6ac3f881bf481f578ef26",
+    "revision": "24669c3ec2f7044872f46dc28568d090",
     "url": "//isaac-fisher.github.io/karatensor/index.html"
   },
   {
-    "revision": "aef3d985f399fab233f2",
+    "revision": "cfecf0d75acc5af3517b",
     "url": "//isaac-fisher.github.io/karatensor/static/css/main.34de6062.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//isaac-fisher.github.io/karatensor/static/js/2.7ba104ce.chunk.js.LICENSE"
   },
   {
-    "revision": "aef3d985f399fab233f2",
-    "url": "//isaac-fisher.github.io/karatensor/static/js/main.76378b8d.chunk.js"
+    "revision": "cfecf0d75acc5af3517b",
+    "url": "//isaac-fisher.github.io/karatensor/static/js/main.bf4bf7df.chunk.js"
   },
   {
     "revision": "e313e82a8b753ec84a59",

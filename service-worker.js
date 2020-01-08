@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "//isaac-fisher.github.io/karatensor/precache-manifest.44b7375efa45e183020a1baa5152320f.js"
+  "//isaac-fisher.github.io/karatensor/precache-manifest.83aa47aae1c21a1f10e26256e03703d4.js"
 );
 
 self.addEventListener('message', (event) => {
