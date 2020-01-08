@@ -51,7 +51,7 @@ function Vid({setMove}) {
   return (
     <div>
       {/*<button onClick={toggleStreaming}>{streaming ? 'Pause Video' :  'Start Video'}</button>*/}
-      <video ref={videoEl} autoPlay width="227" height="227"/>
+      {/* <video ref={videoEl} autoPlay width="227" height="227"/> */}
       <div>
         {classes.map((name, index) => (
           <button key={index} onMouseDown={() => setTraining(index)} onMouseLeave={()=> setTraining(null)} onMouseUp={()=> setTraining(null)}>{name} gesture</button>

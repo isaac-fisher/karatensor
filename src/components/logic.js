@@ -5,7 +5,7 @@ import Keys from "./controllers/keys"
 
 function Logic() {
   const [move, setMove] = useState("");
-  const Controller = true ? Keys : Vid
+  const Controller = false ? Keys : Vid
   return (
     <>
       <Controller setMove={setMove}/>
