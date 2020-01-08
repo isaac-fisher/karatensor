@@ -12,13 +12,15 @@ const Button = styled('button')`
             user-select: none; 
 `;
 
+const classes = Object.values(moves)
+
 function Vid({setMove}) {
-  const classes = Object.values(moves)
   const videoEl = useRef(null);
   const [training, setTraining] = useState(null);
   const [testing, setTesting] = useState(false);
   const [knn, setKnn] = useState(null);
   const [mobilenetM, setMobilenetM] = useState(null);
+  let move = '';
 
   useEffect(() => {
     async function setModel() {
@@ -55,6 +57,7 @@ function Vid({setMove}) {
       logits = infer();
       const result = await knn.predictClass(logits);
       setMove(classes[result.label])
+      move = classes[result.label];
     }
   }, 80);
 
@@ -68,8 +71,8 @@ function Vid({setMove}) {
         ))}
         <br/>
         <button onClick={toggleTesting} style={{color: testing ? 'green' : 'red'}}>Test</button>
-        {/*{ training !== null ? <p>Now training {training}</p> : null}*/}
-        {/*{ (testing && res !== null) ? <p>{classes[res]}</p> : null }*/}
+        { training !== null ? <p>Now training {training}</p> : null}
+        { (testing && move !== null) ? <p>{move}</p> : null }
       </div>
     </div>
   );
