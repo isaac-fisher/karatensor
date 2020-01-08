@@ -5,16 +5,17 @@ import { moves } from '../../utils/constants';
 import Player from './objects/player';
 import WorldDisplayer from './displayer';
 
-const playerWidth = 40;
+const playerWidth = 64;
 
 function World({ move }) {
   
-  const screenWidth = window.screen.width;
+  const screenWidth = window.innerWidth;
 
   const movment = 5;
 
   const [location, setLocation] = useState(0);
-
+  // const [isPunch, setIsPunch] = useState(false);
+  console.log(move);
   useInterval(async () => {
     // move = move.toLowerCase();
     // console.log(move);
@@ -24,9 +25,9 @@ function World({ move }) {
       setLocation(location + movment > screenWidth - playerWidth ? screenWidth - playerWidth : location + movment)
     }
   }, 80);
-
+    
   return (
-    <WorldDisplayer location={location}/>
+    <WorldDisplayer playerLocation={location} move={move}/>
   );
 }
 

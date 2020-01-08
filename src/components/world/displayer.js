@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { useInterval } from '../../utils/setInterval';
 import styled from "styled-components";
-import { moves } from '../../utils/constants';
 import Player from './objects/player';
 
-const playerWidth = 40;
-const playerHeight = 100;
+const playerWidth = 64;
+const playerHeight = 86;
 
 const SceneWrapper = styled('div')`
   position: absolute;
@@ -24,7 +22,7 @@ const SceneCenter = styled('div')`
   height: 40%;
   width: 100%;
   display: flex;
-  background-color: #111;
+  background-color: #050505;
 `
 
 const SceneBottom = styled('div')`
@@ -40,18 +38,17 @@ const PlayerWrapper = styled('div')`
   bottom: 45px;
   width: ${playerWidth}px;
   height: ${playerHeight}px;
-  left: ${({location}) => location}px;
-  background-color: #aaa;
+  left: ${({left}) => left}px;
 `;
 
-function WorldDisplayer({ move, location }) {
+function WorldDisplayer({ playerLocation, move }) {
 
   return (
     <SceneWrapper>
       <SceneTop/>
       <SceneCenter/>
-      <PlayerWrapper location={location}>
-        <Player/>
+      <PlayerWrapper left={playerLocation}>
+        <Player move={move}/>
       </PlayerWrapper>
       <SceneBottom/>
     </SceneWrapper>
